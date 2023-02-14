@@ -1,6 +1,6 @@
 //fortuneTeller
 
-console.log("Hello world!");
+console.log("Your fortune today is:");
 
 const fortune = [
   [
@@ -53,11 +53,11 @@ const fortune = [
   ],
 ];
 
-const faith = Math.floor(Math.random() * 2);
 /*const beginning = Math.floor(Math.random() * 3);
 const middle = Math.floor(Math.random() * 3);*/
 
-const fortuneFunction = function (num) {
+const fortuneFunction = function () {
+  const num = Math.floor(Math.random() * 2);
   const output = [];
 
   if (num === 0) {
@@ -86,4 +86,4 @@ const fortuneFunction = function (num) {
   return output.join(" ");
 };
 
-console.log(fortuneFunction(faith));
+console.log(fortuneFunction());
